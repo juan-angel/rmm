@@ -54,7 +54,7 @@ public class RichardsonMaturityModelApplication {
 	// Swagger needed bean
 	@Bean
 	public Docket buildDocket() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.example.rmm.level3"))
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any()).build();
 	}
 	
